@@ -1,3 +1,6 @@
 -- Write your MySQL query statement below
 
-SELECT DISTINCT author_id AS id FROM Views WHERE viewer_id = author_id ORDER BY author_id ASC ;
+-- Return - World - id - Ascending 
+-- Condition  - viewer_id = author_id - both are in World Table
+
+SELECT DISTINCT author_id AS id  from Views WHERE viewer_id = author_id ORDER BY id ASC;
