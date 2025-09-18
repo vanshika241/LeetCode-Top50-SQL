@@ -1,5 +1,10 @@
  -- Write your MySQL query statement below
 
-SELECT pn.unique_id , p.name 
-FROM EmployeeUNI pn
-RIGHT JOIN Employees p ON pn.id  = p.id;
+-- Return name - Employees , Unique id - > EmployeeUNI
+-- i want all name if unique id not write null - > Left join 
+-- common - id it give match e.id == u.id 
+
+SELECT e.name , u.unique_id 
+FROM Employees e 
+LEFT JOIN EmployeeUNI u ON 
+e.id = u.id;
